@@ -19,6 +19,10 @@ app.use("/project", ProjectRouter)
 app.use("/product", ProductRouter)
 
 
+app.get("/" , (req,res)=>{
+   res.send("welcome to my lms server")
+})
+
 const  port = 4500 
 app.listen(port, async()=> {
     try {
